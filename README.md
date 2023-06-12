@@ -1,6 +1,6 @@
 Modified from byrek/arduino-cj125
 I moved the library files into the main dir to make it more easy to
-source control build my hobby project.
+source control and develop my project.
 
 # Required Arduino libraries:
 - SPI
