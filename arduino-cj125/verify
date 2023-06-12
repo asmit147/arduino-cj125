@@ -1,0 +1,20 @@
+#!/bin/sh
+
+#TODO This should probably be a Makefile instead.
+
+DEFAULT_FILE="./arduino_cj125.ino"
+DEFAULT_BOARD="arduino:avr:leonardo"
+
+file="$DEFAULT_FILE"
+board="$DEFAULT_BOARD"
+
+while getopts vf:b: c
+do
+	case "$c" in
+	v) verbose="--verbose" ;;
+	f) file="$OPTARG" ;;
+	b) board="$OPTARG" ;;
+	esac
+done
+
+arduino --board $board --verify $verbose $file

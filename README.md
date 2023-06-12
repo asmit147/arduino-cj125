@@ -1,19 +1,15 @@
+Modified from byrek/arduino-cj125
+I moved the library files into the main dir to make it more easy to
+source control build my hobby project.
+
 # Required Arduino libraries:
 - SPI
-- PID_v1
+- PID_v1 (arduino --install-library "PID:1.2.0")
 
-#Installation:
-Create a CJ125 directory under Your Arduino libraries directory.
-
-Drop the content in there & have fun!
-
-# Bosch LSU4.9 5-wire identification:
-- IP      red             (czerwony)
-- VM      yellow          (żółty)
-- HG      white           (biały)
-- B+      grey            (szary)
-- IA      not connected   (nie podłączony)
-- UN      black           (czarny)
+# Example:
+arduino --board arduino:avr:leonardo --verify ./arduino_cj125.ino
+or
+./verify
 
 # Arduino control lines
 
