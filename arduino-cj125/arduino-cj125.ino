@@ -3,7 +3,7 @@
  */
 
 #include <Arduino.h>
-#include <cj125.h>
+#include "cj125.h"
 
 #define version "1.0b"
 
